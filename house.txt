@@ -1,0 +1,1 @@
+Customer type: housecustomer used unit: 300.0, Total bill: 225.0

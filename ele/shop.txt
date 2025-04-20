@@ -1,0 +1,2 @@
+Customer type: shop
+customer used unit: 700.0, Total bill: 1400.0

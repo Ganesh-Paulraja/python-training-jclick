@@ -1,0 +1,27 @@
+Marks Report
+Tamil: 999
+English: 7987
+Math: 4234
+Science: 34
+Social: 24
+Result: Fail
+Class: No class
+
+Marks Report
+Tamil: 805
+English: 455
+Math: 354
+Science: 335
+Social: 23
+Result: Fail
+Class: No class
+
+Marks Report
+Tamil: 4334
+English: 4324
+Math: 23
+Science: 545
+Social: 232
+Result: Fail
+Class: No class
+
