@@ -291,4 +291,27 @@
 #5. Updating Records
      # > update <table-name> set col-name=data, col-name=data,....[where <condition>]
 
+#6. Deleteing Records
+
+    # delete from <table-name(optional)> [where <condition>]
+
+# Dropping Table
+    #drop table <table-name>
+
+# Dropping DB
+    #Drop database <database-name>
+
+# Functions
+
+# max()
+# min()
+# sum()
+# avg()
+# count()
+# ceiling()
+# floor()
+# pow()
+# sqrt()
+# abs()
+
 
