@@ -214,26 +214,78 @@
 # print("table droped")
 # -------------------------------------------------
 
+# import mysql.connector
+# mydb = mysql.connector.connect(host = "localhost", username = "root", password="805661@figma", database = "ganeshbanking" )
+
+# mycursor = mydb.cursor()
+# sql = "create table newacc(acn int primary key, ana varchar(30) not null, ad1 varchar(30), ad2 varchar(30), act varchar(10), ref varchar(20), opd varchar(12), oam int, trd varchar(12),cbl int)"
+
+# d1 = int(input("Enter Account Number"))
+# d2 = input("Enter Account Holder's Name")
+# d3 = input("Enter Address Field 1")
+# d4 = input("Enter Address Field 2")
+# d5 = input("Enter Account Type")
+# d6 = input ("Enter Reference")
+# d7 = input("Enter Account Opening Date")
+# d8 = int(input("Enter Opening Amount"))
+
+# val = (d1, d2, d3, d4, d5, d6, d7, d8, d7, d8)
+# sql = "insert into newacc values(%s, %s, %s, %s, %s, %s, %s, %s, %s, %s)"
+
+# # mycursor.execute(sql)
+# mycursor.execute(sql, val)
+# mydb.commit()
+
+# print(mycursor.rowcount, 'database created')
+# -------------------------------------------------------------
+
+# import mysql.connector
+# mydb = mysql.connector.connect(host = "localhost", username = "root", password="805661@figma", database = "ganeshbanking" )
+
+# mycursor = mydb.cursor()
+# sql = "create table payin(acn int primary key, pad varchar(12), amp int)"
+
+# d1 = int(input("Enter Account Number"))
+# d2 = input("Enter Date of Payment")
+# d3 = int(input("Enter Payin Amount"))
+
+# val = (d1, d2, d3)
+# sql = "insert into payin values(%s, %s, %s)"
+
+# # mycursor.execute(sql)
+# mycursor.execute(sql, val)
+
+# val1 = (d2, d3, d1)
+# sql1 = "update newacc set trd=%s, cbl= cbl+ %s where acn = %s"
+# mycursor.execute(sql1, val1)
+
+# mydb.commit()
+
+# print(mycursor.rowcount, 'database created')
+# -------------------withdraw table--------------------------------------
+
 import mysql.connector
 mydb = mysql.connector.connect(host = "localhost", username = "root", password="805661@figma", database = "ganeshbanking" )
 
 mycursor = mydb.cursor()
-sql = "create table newacc(acn int primary key, ana varchar(30) not null, ad1 varchar(30), ad2 varchar(30), act varchar(10), ref varchar(20), opd varchar(12), oam int, trd varchar(12),cbl int)"
-
-d1 = int(input("Enter Account Number"))
-d2 = input("Enter Account Holder's Name")
-d3 = input("Enter Address Field 1")
-d4 = input("Enter Address Field 2")
-d5 = input("Enter Account Type")
-d6 = input ("Enter Reference")
-d7 = input("Enter Account Opening Date")
-d8 = int(input("Enter Opening Amount"))
-
-val = (d1, d2, d3, d4, d5, d6, d7, d8, d7, d8)
-sql = "insert into newacc values(%s, %s, %s, %s, %s, %s, %s, %s, %s, %s)"
+# sql = "create table withdraw(acn int primary key, wd varchar(12), amw int)"
 
 # mycursor.execute(sql)
-mycursor.execute(sql, val)
+
+d1 = int(input("Enter Account Number"))
+d2 = input("Enter Date of withdraw")
+d3 = int(input("Enter withdraw Amount"))
+
+val = (d1, d2, d3)
+sql = "insert into witdraw values(%s, %s, %s)"
+mycursor.execute(sql)
+
+val1 = (d2, d3, d1)
+sql1 = "update newacc set trd=%s, cbl= cbl- %s where acn = %s"
+mycursor.execute(sql1, val1)
+
 mydb.commit()
 
-print(mycursor.rowcount, 'database created')
+# -----------------------------------------------------
+
+

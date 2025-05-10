@@ -1,16 +1,8 @@
+// https://dummyjson.com/posts/
 
-const express = require('express');
 
-const app = express();
+fetch('https://dummyjson.com/posts/')
+  .then(res => res.json())
+  .then(console.log(res.data))
+  .catch(error => console.log(error))
 
-app.use(express.json());
-
-app.get('/', (req, res) => {
-  res.send('Hello, World!');
-});
-
-const PORT = process.env.PORT || 3000;
-
-app.listen(PORT, () => {
-  console.log(`Server is running on http://localhost:${PORT}`);
-});
