@@ -100,12 +100,83 @@
 
 # working with Area
 
-from scipy import constants
+# from scipy import constants
 
-print(constants.acre) 
+# print(constants.acre) 
 
-acr = int(input("Enter the area in acre"))
+# acr = int(input("Enter the area in acre"))
 
-sqm = constants.acre * acr
+# sqm = constants.acre * acr
 
-print("Area in sqm: ", sqm)
+# print("Area in sqm: ", sqm)
+# --------------------------------------------------
+
+#working with liter
+# from scipy import constants
+
+# print(constants.liter) 
+
+# lit = int(input("Enter the aize in liter"))
+
+# cmt = constants.liter * lit
+
+# print("Capacity in cmt: ", cmt)
+# --------------------------------------------------------
+# kmh
+# from scipy import constants
+
+# print(constants.liter) 
+
+# lit = int(input("Enter the aize in liter"))
+
+# cmt = constants.liter * lit
+
+# print("Capacity in cmt: ", cmt)
+
+# ------------------------------------------------------------
+# from scipy import constants
+
+# print(constants.kmh) 
+
+# spd = int(input("Enter the speed"))
+
+# dis = constants.kmh * spd
+
+# print("Distance Travelling in sec: ", dis)
+
+# ---------------------------------------------------------
+
+# from scipy import constants
+# print(constants.zero_Celsius)
+
+# tmp = int(input("Enter the temperature in celsius"))
+
+# kel = constants.zero_Celsius * tmp
+
+# print("Temperature in kelvin: ",kel)
+
+# ----------------------------------------------------------
+
+# from scipy import constants
+
+# print(constants.calorie)
+
+# ene = int(input("Enter the enewrgy in calories"))
+
+# jul = constants.calorie * ene
+
+# print("Energy in Joules: ", jul)
+
+# -----------------------------------------------------
+
+# from scipy import constants
+
+# print(constants.hp)
+
+# pow = int(input("Enter the energy in hp"))
+
+# wts = constants.hp * pow
+
+# print("Energy in watts: ", wts)
+
+# -------------------------------------------------------
